@@ -14,11 +14,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) Education' Language: 'fr' Physical Memory: 32481 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-e2536561" at "2026-04-08T16:59:51.2023999Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-08T16:59:51Z
+Date: 2026-04-27T21:02:09Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-e2536561" at "2026-04-27T21:02:09.9850088Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -32,7 +32,7 @@ C:/Users/e2536561/Documents/Blaise_Adriano_TravailPratique/TP2
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-51959
+63501
 -licensingIpc
 LicenseClient-e2536561
 -job-worker-count
@@ -80,12 +80,12 @@ C:/Users/e2536561/Documents/Blaise_Adriano_TravailPratique/TP2
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [6248]  Target information:
+Player connection [14700]  Target information:
 
-Player connection [6248]  * "[IP] 10.40.73.18 [Port] 0 [Flags] 2 [Guid] 1637427968 [EditorId] 1637427968 [Version] 1048832 [Id] WindowsEditor(7,F3011-06) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [14700]  * "[IP] 10.40.73.22 [Port] 0 [Flags] 2 [Guid] 1181572329 [EditorId] 1181572329 [Version] 1048832 [Id] WindowsEditor(7,F3011-06) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [6248] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [6248] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14700] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14700] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -97,7 +97,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.41 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
@@ -113,55 +113,55 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002312 seconds.
-- Loaded All Assemblies, in  0.502 seconds
+Registered in 0.002036 seconds.
+- Loaded All Assemblies, in  0.412 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              6de7f710efb045c1a31e27ed74538344
-  Correlation Id:          f11f973ef7f2d2842504ee3e2724b1e4
-  External correlation Id: 8729834440599548689
+  Session Id:              30987d0534ca4a3e80fa509701d81364
+  Correlation Id:          b5fd5c534c862ccb8cc7f9bbaf4fcae4
+  External correlation Id: 5450421275303814248
   Machine Id:              jpVUHnn3q0jwkelLBWG6r8FRmkQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-e2536561" (connect: 0.00s, validation: 0.00s, handshake: 1.27s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-e2536561-notifications" at "2026-04-08T16:59:52.4695241Z"
-[Licensing::Module] Licensing Background thread has ended after 1.27s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-e2536561" (connect: 0.00s, validation: 0.00s, handshake: 1.06s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-e2536561-notifications" at "2026-04-27T21:02:11.0493356Z"
+[Licensing::Module] Licensing Background thread has ended after 1.06s
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.461 seconds
-Domain Reload Profiling: 958ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.400 seconds
+Domain Reload Profiling: 809ms
+	BeginReloadAssembly (127ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (234ms)
-		LoadAssemblies (140ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (187ms)
+		LoadAssemblies (123ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (231ms)
-			TypeCache.Refresh (228ms)
-				TypeCache.ScanAssembly (213ms)
+		AnalyzeDomain (184ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (168ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (462ms)
+	FinalizeReload (400ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (405ms)
+		SetupLoadedEditorAssemblies (353ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (63ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (102ms)
-			ProcessInitializeOnLoadAttributes (159ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -176,8 +176,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Education
   Type: ULF
   Expiration: 2026-08-21T13:50:40Z
-- Loaded All Assemblies, in  0.890 seconds
-Refreshing native plugins compatible for Editor in 1.52 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.787 seconds
+Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -186,225 +186,47 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.867 seconds
-Domain Reload Profiling: 1751ms
-	BeginReloadAssembly (193ms)
+- Finished resetting the current domain, in  0.866 seconds
+Domain Reload Profiling: 1647ms
+	BeginReloadAssembly (180ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (595ms)
-		LoadAssemblies (368ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (513ms)
+		LoadAssemblies (334ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (324ms)
-			TypeCache.Refresh (223ms)
-				TypeCache.ScanAssembly (206ms)
-			BuildScriptInfoCaches (84ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (867ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (169ms)
+			BuildScriptInfoCaches (80ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (866ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (711ms)
+		SetupLoadedEditorAssemblies (708ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (168ms)
-			ProcessInitializeOnLoadAttributes (392ms)
-			ProcessInitializeOnLoadMethodAttributes (135ms)
+			BeforeProcessingInitializeOnLoad (165ms)
+			ProcessInitializeOnLoadAttributes (394ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.66 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6944 unused Assets / (5.3 MB). Loaded Objects now: 7776.
-Memory consumption went from 157.9 MB to 152.6 MB.
-Total: 12.800700 ms (FindLiveObjects: 0.872700 ms CreateObjectMapping: 1.757600 ms MarkObjects: 6.440900 ms  DeleteObjects: 3.728400 ms)
+Unloading 6945 unused Assets / (4.9 MB). Loaded Objects now: 7777.
+Memory consumption went from 157.8 MB to 153.0 MB.
+Total: 8.996600 ms (FindLiveObjects: 0.768400 ms CreateObjectMapping: 1.146900 ms MarkObjects: 4.813600 ms  DeleteObjects: 2.266900 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 51857.793346 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0116.png
-  artifactKey: Guid(84c22523ca43009438f15f2d15e910f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0116.png using Guid(84c22523ca43009438f15f2d15e910f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6e87ce8c28b371b967f97fda36781d98') in 0.1271814 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0170.png
-  artifactKey: Guid(034f16463056d914cb7c948fddbdbf94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0170.png using Guid(034f16463056d914cb7c948fddbdbf94) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e85e4315156cdbc6e41188fe3a3cf4e0') in 0.0176936 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0101.png
-  artifactKey: Guid(44e7ee28a8d8ef1438b4ed8bd771af01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0101.png using Guid(44e7ee28a8d8ef1438b4ed8bd771af01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c5466be867eb8b13852bbb1e9caa9707') in 0.0176473 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0056.png
-  artifactKey: Guid(0a75ae0186250404b82ef11b4c5beba4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0056.png using Guid(0a75ae0186250404b82ef11b4c5beba4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aea161d8f5fafdafe4da6e95c24ec725') in 0.014684 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/Backgrounds/tile_0015.png
-  artifactKey: Guid(33b92577ccde7384a87f116da0a2796f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/Backgrounds/tile_0015.png using Guid(33b92577ccde7384a87f116da0a2796f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb7286406dc70a1cc56d39850025de66') in 0.0158064 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0025.png
-  artifactKey: Guid(0356613837d5aed46b8a4d1b9077aa68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0025.png using Guid(0356613837d5aed46b8a4d1b9077aa68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b750432447995a4e8ce64a504678dbeb') in 0.0155506 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0054.png
-  artifactKey: Guid(d4409822df399d84ba479ee4642c31a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0054.png using Guid(d4409822df399d84ba479ee4642c31a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '52809854399a367bd9ef05e76e25eb66') in 0.0146622 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0115.png
-  artifactKey: Guid(23d6a13c75eba584d8bb3979bcc93e84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0115.png using Guid(23d6a13c75eba584d8bb3979bcc93e84) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0df6c042b5da8623181bccf18473614e') in 0.0152859 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/Characters/tile_0019.png
-  artifactKey: Guid(7ae34c942da89ca4e8af1976ea8015dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/Characters/tile_0019.png using Guid(7ae34c942da89ca4e8af1976ea8015dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0021083426352d8f56b54f09edbfbb3b') in 0.0151435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0013.png
-  artifactKey: Guid(bfc4c5b4ce6aabd4a85e254901400bbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0013.png using Guid(bfc4c5b4ce6aabd4a85e254901400bbb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22aa5f8da84d05670bda47973468e94c') in 0.0184351 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/Characters/tile_0011.png
-  artifactKey: Guid(df3afe53ec16a8d4897d8eaf7a4663c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/Characters/tile_0011.png using Guid(df3afe53ec16a8d4897d8eaf7a4663c3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35d364c795fd2d6812c15920e80b9726') in 0.0166545 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0141.png
-  artifactKey: Guid(16fc62350a86f0a40bd09ec50d2bd186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0141.png using Guid(16fc62350a86f0a40bd09ec50d2bd186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '82bcad900e72d72a76af6a43a6be101d') in 0.0148348 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0173.png
-  artifactKey: Guid(26f5916e4e9d7fe4da1eb2cfd56bfc8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0173.png using Guid(26f5916e4e9d7fe4da1eb2cfd56bfc8e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7bc538e569877868fd191c8d61fc1679') in 0.0152644 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0094.png
-  artifactKey: Guid(d18c433fba12bc94ba5a7437d4a1c314) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0094.png using Guid(d18c433fba12bc94ba5a7437d4a1c314) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33c26d5ee2afd760cf9e972ef02fbb47') in 0.0164698 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0075.png
-  artifactKey: Guid(3b46bc6be2836f84198d8bbf3f52afd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0075.png using Guid(3b46bc6be2836f84198d8bbf3f52afd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47629dd8d03cb9f6092f0b28124102f6') in 0.0159276 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0162.png
-  artifactKey: Guid(3797b04e6f3adb84bad03bb608a19719) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0162.png using Guid(3797b04e6f3adb84bad03bb608a19719) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62cbfc759812f87bc1c71b456aa658fc') in 0.0169421 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0126.png
-  artifactKey: Guid(e1839fa8c5443ff4d80324528537e15f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0126.png using Guid(e1839fa8c5443ff4d80324528537e15f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77ec03c1c887038b8cf1037eaa6b4c31') in 0.015939 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0012.png
-  artifactKey: Guid(b2dbe3caa060f69449240c266ac35209) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0012.png using Guid(b2dbe3caa060f69449240c266ac35209) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60c5222fab47b8f02c16d6017e6008ac') in 0.0201899 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0078.png
-  artifactKey: Guid(24300cfabe5781f48969bfb5477cb1b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0078.png using Guid(24300cfabe5781f48969bfb5477cb1b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b321f9f74eca8bbf166ee9e3317e5ee') in 0.0164481 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/tile_0018.png
-  artifactKey: Guid(0fd2c1ed5bc69cf4e811f4cbbec17a7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/tile_0018.png using Guid(0fd2c1ed5bc69cf4e811f4cbbec17a7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '01df7068177621a3f7dd90e19df3145a') in 0.015854 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/kenney_pixel-platformer/Tiles/Characters/tile_0023.png
-  artifactKey: Guid(3da10c976a504214bbe8116fe805c473) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/kenney_pixel-platformer/Tiles/Characters/tile_0023.png using Guid(3da10c976a504214bbe8116fe805c473) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e7ad17d174ad681f51a2ab493dc728bf') in 0.0156026 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.96 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6933 unused Assets / (4.9 MB). Loaded Objects now: 7779.
-Memory consumption went from 156.5 MB to 151.6 MB.
-Total: 12.950800 ms (FindLiveObjects: 1.058800 ms CreateObjectMapping: 1.454400 ms MarkObjects: 6.889500 ms  DeleteObjects: 3.547100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
