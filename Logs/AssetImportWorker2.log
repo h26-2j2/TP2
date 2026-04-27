@@ -251,3 +251,11 @@ Received Import Request.
 Start importing Assets/Font/PressStart2P-Regular Bitmap.asset using Guid(4520ea990623fae49bfd41f50ed6dd3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41f9429333e07a415fb189a9e6419a4f') in 0.0450824 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
 
+========================================================================
+Received Import Request.
+  Time since last request: 209.501338 seconds.
+  path: Assets/Font/PressStart2P-Regular Bitmap.asset
+  artifactKey: Guid(4520ea990623fae49bfd41f50ed6dd3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Font/PressStart2P-Regular Bitmap.asset using Guid(4520ea990623fae49bfd41f50ed6dd3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e68f874a2fe8162cc209c27e9a29c78') in 0.0274815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
