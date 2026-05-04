@@ -1,5 +1,10 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class GenereEquation : MonoBehaviour
 {   
@@ -17,6 +22,7 @@ public class GenereEquation : MonoBehaviour
     public int nombre1; // Premier nombre de l'équation
     public int nombre2; // Deuxième nombre de l'équation
     public int pointDeVie = 3; // Exemple de points de vie
+    public bool GameOver = false; // Variable pour suivre l'état de fin de jeu
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,6 +44,27 @@ public class GenereEquation : MonoBehaviour
         reponse1.text = reponseCorrecte.ToString();
         reponse2.text = reponseFausse1.ToString();
         reponse3.text = reponseFausse2.ToString();
+
+        // Alterner les réponses pour éviter que la bonne réponse soit toujours au même endroit
+        int randomIndex = Random.Range(0, 3);
+        if (randomIndex == 0)
+        {
+            reponse1.text = reponseCorrecte.ToString();
+            reponse2.text = reponseFausse1.ToString();
+            reponse3.text = reponseFausse2.ToString();
+        }
+        else if (randomIndex == 1)
+        {
+            reponse1.text = reponseFausse1.ToString();
+            reponse2.text = reponseCorrecte.ToString();
+            reponse3.text = reponseFausse2.ToString();
+        }
+        else
+        {
+            reponse1.text = reponseFausse1.ToString();
+            reponse2.text = reponseFausse2.ToString();
+            reponse3.text = reponseCorrecte.ToString();
+        }
 
         // Afficher les points de vie
         pointDeVieText.text = $"Points de vie : {pointDeVie}";
@@ -63,7 +90,7 @@ public class GenereEquation : MonoBehaviour
         // lorsque le joueur clique sur une réponse, vérifier si c'est la bonne réponse, si c'est la bonne réponse, afficher un message de victoire et générer une nouvelle équation, sinon afficher un message d'échoue et pert une 1 vie
         
         
-        if (tempsInitial <= 0) // si le temps atteint 0
+        if (tempsInitial <= 0 && !GameOver) // si le temps atteint 0
         {
             // Afficher un message d'échoue et pert une 1 vie
             EquationTexte.text = "Temps écoulé !";
@@ -81,16 +108,25 @@ public class GenereEquation : MonoBehaviour
             
 
         }
-        else if (pointDeVie <= 0) // si les points de vie atteignent 0
+        if (pointDeVie <= 0) // si les points de vie atteignent 0
         {
             // Afficher un message de fin de jeu
             GameOverText.text = "Game Over !";
 
             // Le temps s'arrête et le jeu ne génère plus de nouvelles équations
             enabled = false; // Désactive ce script pour arrêter les mises à jour
-
+            GameOver = true; // Met à jour l'état de fin de jeu
         }
         {
+
+            // si le joueur répond correctement à chacune des questions, afficher un message de victoire, arrêter le temps, attendre avant que le jeu change de scène ou niveau
+            if (nombreDeQuestions <= 0)
+            {
+                GameWinText.text = "Félicitations, vous avez gagné !";
+                enabled = false; // Désactive ce script pour arrêter les mises à jour
+                GameOver = true; // Met à jour l'état de fin de jeu
+                Task.Delay(2000).ContinueWith(_ => SceneManager.LoadScene("niveau2")); // Charge la scène suivante (niveau 2) après un délai de 2 secondes
+            }
         
     }
 }}

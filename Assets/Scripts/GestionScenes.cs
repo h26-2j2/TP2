@@ -5,6 +5,9 @@ public class GestionScenes : MonoBehaviour
 {
     public string sceneIntro = "TitreIntro";
     public string sceneJeu = "niveau1";
+    public string sceneJeu2 = "niveau2";
+    public string sceneJeu3 = "niveau3";
+    
 
     public void DemarrerJeu()
     {
