@@ -229,7 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GenereEquation
   nombreDeQuestions: 5
   GameOverText: {fileID: 1292399988}
-  GameWinText: {fileID: 0}
+  GameWinText: {fileID: 1292399988}
   question: {fileID: 0}
   reponse1: {fileID: 842538240}
   reponse2: {fileID: 832854818}
@@ -242,6 +242,7 @@ MonoBehaviour:
   nombre2: 0
   pointDeVie: 3
   GameOver: 0
+  EnAttente: 0
 --- !u!4 &622502743
 Transform:
   m_ObjectHideFlags: 0
@@ -339,7 +340,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649694933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 622502742}
+        m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
+        m_MethodName: BoutonClique
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &649694933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,7 +993,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104435326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 622502742}
+        m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
+        m_MethodName: BoutonClique
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1104435326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,7 +1467,7 @@ GameObject:
   - component: {fileID: 1292399987}
   - component: {fileID: 1292399988}
   m_Layer: 5
-  m_Name: GameOver
+  m_Name: GameMessage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1649,7 +1674,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1372364100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 622502742}
+        m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
+        m_MethodName: BoutonClique
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1372364100
 MonoBehaviour:
   m_ObjectHideFlags: 0
