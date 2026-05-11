@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 622502743}
   - component: {fileID: 622502742}
   m_Layer: 0
-  m_Name: calculeur
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,10 +230,12 @@ MonoBehaviour:
   nombreDeQuestions: 5
   GameOverText: {fileID: 1292399988}
   GameWinText: {fileID: 1292399988}
-  question: {fileID: 0}
   reponse1: {fileID: 842538240}
   reponse2: {fileID: 832854818}
   reponse3: {fileID: 1187662830}
+  bouton1: {fileID: 1372364099}
+  bouton2: {fileID: 649694932}
+  bouton3: {fileID: 1104435325}
   EquationTexte: {fileID: 1117997255}
   texteTemps: {fileID: 759650721}
   pointDeVieText: {fileID: 1925756379}
@@ -243,6 +245,9 @@ MonoBehaviour:
   pointDeVie: 3
   GameOver: 0
   EnAttente: 0
+  prochaineScene: niveau2
+  tempsParNiveau: 10
+  viesParNiveau: 3
 --- !u!4 &622502743
 Transform:
   m_ObjectHideFlags: 0
@@ -344,11 +349,11 @@ MonoBehaviour:
       - m_Target: {fileID: 622502742}
         m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
         m_MethodName: BoutonClique
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -997,11 +1002,11 @@ MonoBehaviour:
       - m_Target: {fileID: 622502742}
         m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
         m_MethodName: BoutonClique
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1678,11 +1683,11 @@ MonoBehaviour:
       - m_Target: {fileID: 622502742}
         m_TargetAssemblyTypeName: GenereEquation, Assembly-CSharp
         m_MethodName: BoutonClique
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
