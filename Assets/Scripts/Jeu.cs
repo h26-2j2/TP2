@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using Unity.VisualScripting.Dependencies.NCalc;
 
+
+
 public class GenereEquation : MonoBehaviour
 {
+    
     public int nombreDeQuestions = 5; // Nombre total de questions à poser
     public TMP_Text GameOverText; // Texte pour afficher le message de fin de jeu
     public TMP_Text GameWinText; // Texte pour afficher le message de victoire
@@ -18,6 +21,7 @@ public class GenereEquation : MonoBehaviour
     public Button bouton1; // Bouton de réponse 1
     public Button bouton2; // Bouton de réponse 2
     public Button bouton3; // Bouton de réponse 3
+
 
     public TMP_Text EquationTexte; // Texte pour afficher l'équation
     public TMP_Text texteTemps; // Texte pour afficher le temps restant
@@ -32,11 +36,23 @@ public class GenereEquation : MonoBehaviour
     public float tempsParNiveau = 10f; // Temps disponible par niveau
     public int viesParNiveau = 3; // Vies disponibles par niveau
 
+    public Musique musique;
+
+    
+
+
+
+
+    public BackgroundLoop backgroundLoop; // Référence au script BackgroundLoop
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        GameOverText.enabled = false;
+        GameWinText.enabled = false;
         InitialiserJeu();
         NouvelleEquation();
+        
     }
 
     void InitialiserJeu()
@@ -136,12 +152,16 @@ public class GenereEquation : MonoBehaviour
 
         if (pointDeVie <= 0) // si les points de vie atteignent 0
         {
+            musique.ArreterMusique();
             // Afficher un message de fin de jeu
-            GameOverText.text = "Partie Terminée !";
-
-            // Le temps s'arrête et le jeu ne génère plus de nouvelles équations et désactive les interactions du joueur
+            GameOverText.enabled = true; // Affiche le texte de fin de jeu
+            GameOverText.text = "Partie Terminée ! Appuyez sur (R) pour recommencer.";
+            // Le temps s'arrête, l'arriere plan arrete de bouger, la musique arrete de jouer et le jeu ne génère plus de nouvelles équations et désactive les interactions du joueur
+            backgroundLoop.enabled = false; // Désactive le script BackgroundLoop pour arrêter le mouvement de l'arrière-plan
             enabled = false; // Désactive ce script pour arrêter les mises à jour
             GameOver = true; // Met à jour l'état de fin de jeu
+            SetButtonsInteractable(false); // Désactive les boutons de réponse
+            
         }
 
         // si le joueur répond correctement à chacune des questions, il gagne la partie
@@ -149,9 +169,6 @@ public class GenereEquation : MonoBehaviour
         {
             Invoke("GameWin", 0f); // Appelle la méthode GameWin immédiatement
         }
-
-        // Permet de recommencer la partie après une défaite en appuyant sur la touche R
-        RecommencerPartie();
     }
 
     // Fonction pour gérer le clic sur les boutons de réponse
@@ -189,7 +206,8 @@ public class GenereEquation : MonoBehaviour
     // Fonction pour gérer la victoire du joueur
     void GameWin()
     {
-        GameWinText.text = "Félicitations, vous avez gagné !";
+        GameWinText.text = "Félicitations, vous avez gagné ! Chargement du niveau suivant...";
+        GameWinText.enabled = true; // Affiche le texte de victoire
         enabled = false; // Désactive ce script pour arrêter les mises à jour
         GameOver = true; // Met à jour l'état de fin de jeu
         Invoke("ChangerScene", 3f); // Charge la scène suivante après 3 secondes
@@ -207,15 +225,4 @@ public class GenereEquation : MonoBehaviour
         tempsInitial = tempsParNiveau; // Réinitialiser le temps pour la prochaine équation
         SetButtonsInteractable(true);
     }
-
-    // Fonction pour recommencer la partie après une défaite en appuyant sur la touche R
-    public void RecommencerPartie(){
-        if(Keyboard.current.rKey.wasPressedThisFrame && GameOver){
-            InitialiserJeu();
-            NouvelleEquation();
-            enabled = true; // Réactive ce script pour recommencer les mises à jour
-        }
-    }
-
-    
 }
